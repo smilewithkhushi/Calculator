@@ -1,0 +1,111 @@
+@font-face{
+    font-family: defaultFont;
+    src: url(JosefinSans-Bold.ttf);
+}
+
+@font-face{
+    font-family: lemonMilk;
+    src: url(LemonMilkRegular-X3XE2.otf);
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  
+body{
+    width: 100%;
+    position: relative;
+
+    font-family: 'Trebuchet MS' ,defaultFont;
+    min-height  : 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    display: grid;
+   position: relative;
+    align-content: center;
+    background-color: white;
+    width: 50%;
+    height: auto;
+    border: 5px solid white;
+    border-style: double;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+
+table{
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+input[type="button"]{
+    width: 100%;
+    padding: 20px 40px;
+    background-color: white;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="text"]{
+    padding: 20px 30px;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    border: 2px solid black;
+
+}
+
+.footer{
+    background-color: rgba(29, 29, 29, 0.635);
+    color: white;
+    width: 100%;
+    font-size: 15px;
+    margin-top: auto;
+    padding: 10px;
+    position: relative;
+    font-family: lemonMilk;
+
+}
+
+@media screen and (max-width: 1000px) {
+    .container{
+      width: 80%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+    table{
+        width: 50%;
+    }
+    .container h1{
+        font-size: 25px;
+    }
+    .footer{
+        font-size: 12px;
+    }
+    input[type="button"]{
+        width: 100%;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    
+    input[type="text"]{
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+    
+  }

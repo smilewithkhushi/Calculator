@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" type="text/css" rel="stylesheet"> 
+    <script src="index.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js" integrity=
+"sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js" integrity=
+"sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer"></script>
+
+    <title>CALCULATOR</title>
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="bgvid.mp4" type="video/mp4">
+      </video>
+
+    <center>
+    <div class="container">
+        <h1> CALCULATOR</h1>
+        <table id="calculator">
+            <!-- top most row containing result and clear button-->
+            <tr>
+                <td colspan="3">
+                    <input type="text" value="" id="result"/> 
+                </td>
+                <td>
+                    <input type="button" value="C" onClick="clr(' ')">
+                </td>
+            </tr>
+            <!-- row containing different numbers and their operations-->
+
+            <tr>
+            <td> <input type="button" value="7" onClick="display('7')" onkeydown="myFunction(event)">
+            </td>
+           
+            <td> <input type="button" value="8" onClick="display('8')" onkeydown="myFunction(event)">
+            </td>
+            
+            <td> <input type="button" value="9" onClick="display('9')" onkeydown="myFunction(event)">
+            </td>
+
+            <td> <input type="button" value="/" onClick="display('/')" onkeydown="myFunction(event)">
+            </td> 
+            </tr>
+
+            <tr>
+                <td> <input type="button" value="4" onClick="display('4')" onkeydown="myFunction(event)">
+                </td>
+               
+                <td> <input type="button" value="5" onClick="display('5')" onkeydown="myFunction(event)">
+                </td>
+                
+                <td> <input type="button" value="6" onClick="display('6')" onkeydown="myFunction(event)">
+                </td>
+                <td> <input type="button" value="x" onClick="display('*')" onkeydown="myFunction(event)">
+                </td>
+                
+                </tr>
+                
+            <tr>
+                <td> <input type="button" value="1" onClick="display('1')" onkeydown="myFunction(event)">
+                </td>
+               
+                <td> <input type="button" value="2" onClick="display('2')" onkeydown="myFunction(event)">
+                </td>
+                
+                <td> <input type="button" value="3" onClick="display('3')" onkeydown="myFunction(event)">
+                </td>
+                <td> <input type="button" value="-" onClick="display('-')" onkeydown="myFunction(event)">
+                </td>      
+            </tr>
+
+            <tr>
+                <td> <input type="button" value="0" onClick="display('0')" onkeydown="myFunction(event)">
+                </td>
+               
+                <td> <input type="button" value="." onClick="display('.')" onkeydown="myFunction(event)">
+                </td>
+                
+                <td> <input type="button" value="=" onClick="solve()">
+                </td>
+                <td> <input type="button" value="+" onClick="display('+')" onkeydown="myFunction(event)">
+                </td>
+                    
+            </tr>
+
+
+        </table>
+        <br>
+    </div>
+
+</center>
+<br> 
+<br> 
+<hr width="95%" size="2" color="white"> 
+    <div class="footer"> <center>
+        Made with ❤️ By Khushi !
+    </center> </div>
+</body>
+</html>
